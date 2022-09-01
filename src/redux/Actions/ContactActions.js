@@ -1,19 +1,18 @@
 import { ADD_CONTACT, DELETE_CONTACT, EDIT_CONTACT } from "./Types";
- 
-const addContact =  data  =>  ({
-    type : ADD_CONTACT,
-    payload : data
-  })
 
-export const editContact = data => ({
+const addContact = (data) => ({
+  type: ADD_CONTACT,
+  payload: data,
+});
+
+export const editContact = (data) => ({
   type: EDIT_CONTACT,
   payload: data,
-})
- 
-export const deleteContact = id => ({
+});
+
+export const deleteContact = (id) => ({
   type: DELETE_CONTACT,
-  payload: id
-})
+  payload: id,
+});
 
 export default addContact;
-  
